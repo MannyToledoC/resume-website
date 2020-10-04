@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/MannyToledoC/resume-website/issues"
   },
-  "homepage": "https://github.com/MannyToledoC/resume-website#readme"
+  "homepage": "https://github.com/MannyToledoC/resume-website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
