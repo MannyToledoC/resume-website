@@ -1,7 +1,10 @@
 
+
+
+
+
 function splash(param) {
   var time = param;
-  console.log('hello');
   setTimeout(function () {
     $('#splash__background').fadeOut();
   }, time);
@@ -9,6 +12,7 @@ function splash(param) {
   setTimeout(function () {
     $('#nav').css({"visibility":"visible"});
   }, time);
+  // use sessionStorage.setItem('splash','true');
 }
 
 
@@ -32,3 +36,10 @@ $(document).on('click', 'a[href^="#"]', function () {
     scrollTop: $($.attr(this, 'href')).offset().top
   }, 500);
 });
+
+
+
+
+function redirect (loc) {
+  window.location.href = loc
+}

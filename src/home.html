@@ -21,7 +21,7 @@
 </head>
 
 <body id="splash__container" onload="splash(900)">
-  <div id="splash__background" class="splash__load">
+  <div id="splash__background" style="display: none;" class="splash__load">
     <div id="splash" class="fire">
       <div class="fire-left">
         <div class="main-fire"></div>
@@ -50,7 +50,7 @@
       <ul class="nav__links">
         <li class="nav__list"><a href="#home">Home</a></li>
         <li class="nav__list"><a href="#project">Projects</a></li>
-        <li class="nav__list"><a href="http://www.khrisanni.com/" target="_blank">Resume</a></li>
+        <li class="nav__list"><a href="/resume">Resume</a></li>
         <li class="nav__list"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -72,40 +72,45 @@
       <div class="project__background">
         <div class="projects">
 
-          <div class="card project__card">
+          <a href="/projects/RoboticsAcademy" class="card project__card project__anchor" >
+            <div class="card-title project__title">
+              Robotics Academy
+            </div>
+            <div class="project__link">
+              <object>
+                <a href="https://roboticsacademy.fiu.edu/" target="_blank">
+                  <i class="fas fa-share"></i>
+                </a>
+              </object>
+            </div>
+          </a>
+
+
+          <a href="/projects/midas" class="card project__card project__anchor">
             <div class="card-title project__title">
               MIDAS
             </div>
             <div class="project__link">
-              <a href="https://github.com/MannyToledoC/MIDAS" target="_blank">
-                <i class="fas fa-code-branch"></i>
-              </a>
+              <object>
+                <a href="https://github.com/MannyToledoC/MIDAS" target="_blank">
+                  <i class="fab fa-github github"></i>
+                </a>
+              </object>
             </div>
-          </div>
+          </a>
 
-          <div class="card project__card">
+          <a href="/projects/resolution" class="card project__card project__anchor">
             <div class="card-title project__title">
               Automatic-Resolution-Changer
             </div>
             <div class="project__link">
-              <a href="https://github.com/MannyToledoC/Automatic-Resolution-Changer" target="_blank">
-                <i class="fas fa-code-branch" ></i>
-              </a>
+              <object>
+                <a href="https://github.com/MannyToledoC/Automatic-Resolution-Changer" target="_blank">
+                  <i class="fab fa-github github"></i>
+                </a>
+              </object>
             </div>
-          </div>
-
-          <div class="card project__card">
-            <div class="card-title project__title">
-              Automatic-Resolution-Changer
-            </div>
-            <div class="project__link">
-              <a href="https://github.com/MannyToledoC/Automatic-Resolution-Changer" target="_blank">
-                <i class="fas fa-code-branch" ></i>
-              </a>
-            </div>
-          </div>
-
-          // bugs out when surrounding card with anchor and anchor hover being changed to blue?
+          </a>
 
         </div>
       </div>

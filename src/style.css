@@ -73,6 +73,7 @@ h3 {
 
 .nav__links li a:hover {
   color: rgb(10, 10, 10);
+  text-decoration: none; 
 }
 
 .contact__button {
@@ -138,7 +139,6 @@ h3 {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  
 }
 
 .project__title {
@@ -153,12 +153,18 @@ h3 {
 }
 
 .project__card:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: all 0.3s ease 0s;
 }
 
 .project__link:hover {
   color: rgb(10, 10, 10);
+}
+
+.project__anchor:hover {
+  color: white;
+  text-decoration: none; 
 }
 
 /* * {
