@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+  <!-- <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/> -->
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="loading.css" />
 
@@ -44,13 +44,12 @@
 
 <body>
   <header id="nav" class="fixed-top">
-    <h3>Grind</h3>
-    
+    <i class="fas fa-fire-alt nav-icon" style="color: white; font-size: 30px;"></i>
     <nav>
       <ul class="nav__links">
         <li class="nav__list"><a href="#home">Home</a></li>
         <li class="nav__list"><a href="#project">Projects</a></li>
-        <li class="nav__list"><a href="/resume">Resume</a></li>
+        <li class="nav__list"><a href="/resume/Manuel_Toledo_Resume.pdf">Resume</a></li>
         <li class="nav__list"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -59,59 +58,161 @@
 
   <div id="home" class="title__container">
     <div class="head__container">
-      <h1 class="title"> Hi, I'm Manuel </h1>
-      <h1 class="subtitle">an aspiring Software Engineer</h1>
+      <h1 class="title" style="font-size: 100px;"> Hi, I'm Manuel </h1>
+      <h1 class="subtitle" style="font-size: 40px;">an aspiring Software Engineer</h1>
     </div>
     
-    <iframe class="profile" src="https://giphy.com/embed/sgVb9gX9DpYEo" width="600" height="396.25" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <!-- <iframe class="profile" src="https://giphy.com/embed/sgVb9gX9DpYEo" width="600" height="396.25" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
+    <img src="/images/new.jpg" style="filter:drop-shadow(0px 8px 10px black); height: 528px; width: 528px;" alt="">
    
   </div>
   
     <div id="project" class="projects__container">
       <h1 class="title" style="padding-bottom: 5vh;">Projects</h1>
       <div class="project__background">
-        <div class="projects">
+      <div class="container-fluid" style="max-width: 1700px;">
+          <div class="projects justify-content-center row ">
 
-          <a href="/projects/RoboticsAcademy" class="card project__card project__anchor" >
-            <div class="card-title project__title">
-              Robotics Academy
+            <div class="col-lg-4 col-md-6">
+              <a href="/projects/RoboticsAcademy" class="card project__card project__anchor" >
+                <img src="/images/recording.gif" class="card-img-top" alt="" style="max-height: 300px;">
+                <div class="card-body">
+                  <div class="card-title project__title">
+                    Robotics Academy
+                  </div>
+                  <div class="project__badge">
+                    <span class="badge badge-dark lang-badge">Laravel</span>
+                    <span class="badge badge-dark lang-badge">PHP</span>
+                    <span class="badge badge-dark lang-badge">HTML</span>
+                    <span class="badge badge-dark lang-badge">CSS</span>
+                    <span class="badge badge-dark lang-badge">JS</span>
+                    <span class="badge badge-dark lang-badge">MySQL</span>
+                    <span class="badge badge-dark lang-badge">Scrum</span>
+                  </div>
+                  <p class="project__info">
+                    A web application focused on teaching robotics courses to students, worked on for Capstone II. Worked on creating a quiz system for instructors
+                    and a user management system for admins.
+                  </p>
+                  <div class="project__link">
+                    <object>
+                      <a href="https://roboticsacademy.fiu.edu/" target="_blank">
+                        <i class="fas fa-share"></i>
+                      </a>
+                    </object>
+                  </div>
+                </div>
+              </a>
             </div>
-            <div class="project__link">
-              <object>
-                <a href="https://roboticsacademy.fiu.edu/" target="_blank">
-                  <i class="fas fa-share"></i>
-                </a>
-              </object>
-            </div>
-          </a>
 
+            <div class="col-lg-4 col-md-6">
+              <a href="/projects/midas" class="card project__card project__anchor">
+                <img src="/images/Sample.gif" class="card-img-top" alt="" style="max-height: 300px;">
+                <div class="card-body">
+                  <div class="card-title project__title">
+                    MIDAS
+                  </div>
+                  <div class="project__badge">
+                    <span class="badge badge-dark lang-badge">UML</span>
+                    <span class="badge badge-dark lang-badge">Architecture</span>
+                    <span class="badge badge-dark lang-badge">Design </span>
+                  </div>
+                  <p class="project__info">
+                    A mobile and web financing application designed for Software Engineering II. Designed the system using StarUML and implemented architectural and design
+                    patterns.
+                  </p>
+                  <div class="project__link">
+                    <object>
+                      <a href="https://github.com/MannyToledoC/MIDAS" target="_blank">
+                        <i class="fab fa-github github"></i>
+                      </a>
+                    </object>
+                  </div>
+                </div>
+              </a>
+            </div>
 
-          <a href="/projects/midas" class="card project__card project__anchor">
-            <div class="card-title project__title">
-              MIDAS
+            <div class="col-lg-4 col-md-6">
+              <a href="/projects/resolution" class="card project__card project__anchor">
+                <img src="https://picsum.photos/200/300" class="card-img-top" alt="" style="max-height: 300px;">
+                <div class="card-body">
+                  <div class="card-title project__title">
+                    Automatic-Resolution-Changer
+                  </div>
+                  <div class="project__badge">
+                    <span class="badge badge-dark lang-badge">Python</span>
+                    <span class="badge badge-dark lang-badge">PySimpleGUI</span>
+                    <span class="badge badge-dark lang-badge">QRes</span>
+                    <span class="badge badge-dark lang-badge">Processes</span>
+                  </div>
+                  <p class="project__info">
+                    Changes monitor resolution once a desired application runs or closes
+                  </p>
+                  <div class="project__link">
+                    <object>
+                      <a href="https://github.com/MannyToledoC/Automatic-Resolution-Changer" target="_blank">
+                        <i class="fab fa-github github"></i>
+                      </a>
+                    </object>
+                  </div>
+                </div>
+              </a>
             </div>
-            <div class="project__link">
-              <object>
-                <a href="https://github.com/MannyToledoC/MIDAS" target="_blank">
-                  <i class="fab fa-github github"></i>
-                </a>
-              </object>
+              
+            <div class="col-lg-4 col-md-6">
+              <a href="/projects/resolution" class="card project__card project__anchor">
+                <img src="https://picsum.photos/200/300" class="card-img-top" alt="" style="max-height: 300px;">
+                <div class="card-body">
+                  <div class="card-title project__title">
+                    Automatic-Resolution-Changer
+                  </div>
+                  <div class="project__badge">
+                    <span class="badge badge-dark lang-badge">Python</span>
+                    <span class="badge badge-dark lang-badge">PySimpleGUI</span>
+                    <span class="badge badge-dark lang-badge">QRes</span>
+                    <span class="badge badge-dark lang-badge">Processes</span>
+                  </div>
+                  <p class="project__info">
+                    Changes monitor resolution once a desired application runs or closes
+                  </p>
+                  <div class="project__link">
+                    <object>
+                      <a href="https://github.com/MannyToledoC/Automatic-Resolution-Changer" target="_blank">
+                        <i class="fab fa-github github"></i>
+                      </a>
+                    </object>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
 
-          <a href="/projects/resolution" class="card project__card project__anchor">
-            <div class="card-title project__title">
-              Automatic-Resolution-Changer
+            <div class="col-lg-4 col-md-6">
+              <a href="/projects/resolution" class="card project__card project__anchor">
+                <img src="https://picsum.photos/200/300" class="card-img-top" alt="" style="max-height: 300px;">
+                <div class="card-body">
+                  <div class="card-title project__title">
+                    Automatic-Resolution-Changer
+                  </div>
+                  <div class="project__badge">
+                    <span class="badge badge-dark lang-badge">Python</span>
+                    <span class="badge badge-dark lang-badge">PySimpleGUI</span>
+                    <span class="badge badge-dark lang-badge">QRes</span>
+                    <span class="badge badge-dark lang-badge">Processes</span>
+                  </div>
+                  <p class="project__info">
+                    Changes monitor resolution once a desired application runs or closes
+                  </p>
+                  <div class="project__link">
+                    <object>
+                      <a href="https://github.com/MannyToledoC/Automatic-Resolution-Changer" target="_blank">
+                        <i class="fab fa-github github"></i>
+                      </a>
+                    </object>
+                  </div>
+                </div>
+              </a>
             </div>
-            <div class="project__link">
-              <object>
-                <a href="https://github.com/MannyToledoC/Automatic-Resolution-Changer" target="_blank">
-                  <i class="fab fa-github github"></i>
-                </a>
-              </object>
-            </div>
-          </a>
-
+            
+          </div>
         </div>
       </div>
     </div>
