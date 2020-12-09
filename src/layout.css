@@ -105,7 +105,8 @@ h3 {
   flex-flow: column;
   margin-left: 10vw;
   margin-right: 10vw;
-  padding-top: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .info__about {
@@ -114,7 +115,15 @@ h3 {
 
 .team__container {
   flex-flow: row;
-  color: white;
+  color: rgb(24, 24, 24);
+  background-color: white;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-right: auto;
+  border: 1px solid rgb(24, 24, 24);
+  border-radius: 2vh;
 }
 /* ---------------------------------------------CONTACT SECTION------------------------------------------------------------------ */
 .contact__container {
