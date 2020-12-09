@@ -104,7 +104,12 @@ h3 {
   display: flex;
   flex-flow: column;
   margin-left: 10vw;
+  margin-right: 10vw;
   padding-top: 10vh;
+}
+
+.info__about {
+  margin-top: 5vh;
 }
 
 .team__container {
@@ -149,4 +154,11 @@ h3 {
 .email:hover {
   color: #4078c0;
   cursor: pointer;
+}
+
+/* ---------------------------------------------PROJECT SECTION------------------------------------------------------------------ */
+
+.project__background {
+  background-color: rgb(10, 10, 10);  
+  
 }
