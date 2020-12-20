@@ -17,12 +17,18 @@ body {
 }
 .title {
   color: white;
-  font-size: 50px;
+  font-size: 45px;
+  font-weight: bold;
 }
 
 .subtitle {
   color: white;
   font-size: 23px;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
 }
 
 h3 {
@@ -117,13 +123,23 @@ h3 {
   flex-flow: row;
   color: rgb(24, 24, 24);
   background-color: white;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding: 8px 15px 8px 15px;
+  margin-right: 15px;
+  border: 1px solid rgb(24, 24, 24);
+  border-radius: 17px;
+}
+
+.tech__container {
+  flex-flow: row;
+  color: rgb(24, 24, 24);
+  background-color: white;
+  padding: 4px 15px 4px 15px;
   margin-right: auto;
   border: 1px solid rgb(24, 24, 24);
-  border-radius: 2vh;
+}
+
+.info__details {
+  display: flex;
 }
 /* ---------------------------------------------CONTACT SECTION------------------------------------------------------------------ */
 .contact__container {
